@@ -11,7 +11,7 @@ jobs:
       fail-fast: false
       matrix:  # https://github.com/CristiFati/pyaudio/blob/master/INSTALL
         # macos-13 in Intel, macos-latest is Apple Silicon ARM
-        os: [macos-13, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-11-arm]
+        os: [macos-15-intel, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-11-arm]
         python-version: [3.13, 3.14]
     runs-on: ${{ matrix.os }}
     steps:
